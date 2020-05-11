@@ -2,7 +2,7 @@
 
 This project describes an Arduino shield which allows the reading of up to 16 PT1000 2 wire RTD temperature sensors, and communicate that information to a computer. It also has two digital outputs, designed to control relays which can turn heaters on and off. This design allows the Arduino to autonomously control the heaters, ensuring consistent temperature control even if the main computer loses connection.
 
-<img src="eagle.png" style="zoom:30%;" />
+<img src="images/eagle.png" style="zoom:30%;" />
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ For the 16 1kΩ resistors, you can measure and record their specific resistances
 
 The Arduino will constantly measure an unamplified temperature, which has a resolution which varies from about $0.1^\circ \text{C}$ near $-200^\circ \text{C}$, to about $1^\circ \text{C}$ near $40^\circ \text{C}$ (this is calculated using 10 bit resolution, an Arduino Due can be configured to use 12 bits instead, giving 100 times finer resolution). 
 
-<img src="/Users/lmh227/Desktop/16-channel-pt1000-reader/amplification_demo.png" style="zoom:30%;" />
+<img src="images/amplification_demo.png" style="zoom:30%;" />
 
 <div style="text-align:center">Serial monitor output comparing amplified and unamplified measurements. These curves were obtained by pinching a PT1000 with my fingers and then releasing. The overall offset can likely be fixed with calibration.</div>
 
