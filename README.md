@@ -2,7 +2,9 @@
 
 This project describes an Arduino shield which allows the reading of up to 16 PT1000 2 wire RTD temperature sensors, and communicate that information to a computer. It also has two digital outputs, designed to control relays which can turn heaters on and off. This design allows the Arduino to autonomously control the heaters, ensuring consistent temperature control even if the main computer loses connection.
 
-<img src="images/eagle.png" width="700;" />
+<p align="center">
+  <img src="images/eagle.png" width="700" />
+</p>
 
 ## Getting Started
 
@@ -25,9 +27,11 @@ For the 16 1kΩ resistors, you can measure and record their specific resistances
 
 The Arduino will constantly measure an unamplified temperature, which has a resolution which varies from about 0.1°C near -200°C, to about 1°C near 40°C (this is calculated using 10 bit resolution, an Arduino Due can be configured to use 12 bits instead, giving 100 times finer resolution). 
 
-<img src="images/amplification_demo.png" width="700" />
+<p align="center">
+  <img src="images/amplification_demo.png" width="700" />
+</p>
 
-<p style="text-align: center">Serial monitor output comparing amplified and unamplified measurements. These curves were obtained by pinching a PT1000 with my fingers and then releasing. The overall offset can likely be fixed with calibration. (Image will be updated to a cleaner one soon.)</p>
+<p alight="center">Serial monitor output comparing amplified and unamplified measurements. These curves were obtained by pinching a PT1000 with my fingers and then releasing. The overall offset can likely be fixed with calibration. (Image will be updated to a cleaner one soon.)</p>
 
 To improve this resolution, the Arduino will also measure an amplified temperature, which lets you effectively "zoom in" on an specific temperature range (see above comparison). There is a several step process to determine the ideal resistors for a given temperature range of interest.
 
