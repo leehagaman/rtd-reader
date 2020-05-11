@@ -31,7 +31,7 @@ The Arduino will constantly measure an unamplified temperature, which has a reso
   <img src="images/amplification_demo.png" width="700" />
 </p>
 
-<p alight="center">Serial monitor output comparing amplified and unamplified measurements. These curves were obtained by pinching a PT1000 with my fingers and then releasing. The overall offset can likely be fixed with calibration. (Image will be updated to a cleaner one soon.)</p>
+<p align="center">Serial monitor output comparing amplified and unamplified measurements. These curves were obtained by pinching a PT1000 with my fingers and then releasing. The overall offset can likely be fixed with calibration. (Image will be updated to a cleaner one soon.)</p>
 
 To improve this resolution, the Arduino will also measure an amplified temperature, which lets you effectively "zoom in" on an specific temperature range (see above comparison). There is a several step process to determine the ideal resistors for a given temperature range of interest.
 
